@@ -58,6 +58,12 @@ function getTokenValueFromFormData(formData: FormData): File | string | undefine
   return undefined;
 }
 
+function cloneFormData(formData: FormData): FormData {
+  const copy = new FormData();
+  for (const [key, value] of formData.entries()) copy.append(key, value);
+  return copy;
+}
+
 /**
  * Get CSRF token from request
  * @param {Request} request - The request object
@@ -75,7 +81,7 @@ export async function getTokenString(request: Request, valueFn?: TokenValueFunct
 
   // url-encoded or multipart/form-data
   if (contentType === 'application/x-www-form-urlencoded' || contentType.startsWith('multipart/form-data')) {
-    const formData = await request.formData();
+    const formData = cloneFormData(await request.formData());
     const formDataVal = getTokenValueFromFormData(formData);
     if (typeof formDataVal === 'string') return formDataVal;
     return '';
