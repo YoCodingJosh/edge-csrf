@@ -1,4 +1,4 @@
-import { createCsrfMiddleware } from '@edge-csrf/express';
+import { createCsrfMiddleware } from '@yocodingjosh-edge-csrf/express';
 import express from 'express';
 
 // initalize csrf protection middleware

@@ -7,11 +7,11 @@ This is the documentation for Edge-CSRF's SvelteKit integration.
 First, add the integration library as a dependency to your app:
 
 ```console
-npm install @edge-csrf/sveltekit
+npm install @yocodingjosh-edge-csrf/sveltekit
 # or
-pnpm add @edge-csrf/sveltekit
+pnpm add @yocodingjosh-edge-csrf/sveltekit
 # or
-yarn add @edge-csrf/sveltekit
+yarn add @yocodingjosh-edge-csrf/sveltekit
 ```
 
 Next, create a server-side hooks file (`hooks.server.ts`) for your project and add the Edge-CSRF handle:
@@ -19,7 +19,7 @@ Next, create a server-side hooks file (`hooks.server.ts`) for your project and a
 ```typescript
 // src/hooks.server.ts
 
-import { createCsrfHandle } from '@edge-csrf/sveltekit';
+import { createCsrfHandle } from '@yocodingjosh-edge-csrf/sveltekit';
 
 // initalize csrf protection handle
 const csrfHandle = createCsrfHandle({
@@ -74,7 +74,7 @@ Finally, to make typescript aware of the new `locals` attributes you can add Edg
 ```typescript
 // src/app.d.ts
 
-import type { CsrfLocals } from '@edge-csrf/sveltekit';
+import type { CsrfLocals } from '@yocodingjosh-edge-csrf/sveltekit';
 
 declare global {
   namespace App {
@@ -104,7 +104,7 @@ If you want lower-level control over the response or which routes CSRF protectio
 // src/hooks.server.ts
 
 import type { Handle } from '@sveltejs/kit';
-import { CsrfError, createCsrfProtect } from '@edge-csrf/sveltekit';
+import { CsrfError, createCsrfProtect } from '@yocodingjosh-edge-csrf/sveltekit';
 
 // initalize csrf protection method
 const csrfProtect = createCsrfProtect({
@@ -121,7 +121,7 @@ export const handle: Handle = async ({ event, resolve }) => {
     if (err instanceof CsrfError) return new Response('invalid csrf token', { status: 403 });
     throw err;
   }
-    
+
   return resolve(event);
 };
 ```
@@ -153,7 +153,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 ## API
 
-The following are named exports in the the `@edge-csrf/sveltekit` module:
+The following are named exports in the the `@yocodingjosh-edge-csrf/sveltekit` module:
 
 ### Types
 

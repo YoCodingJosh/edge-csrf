@@ -7,11 +7,11 @@ This is the documentation for Edge-CSRF's Next.js integration. The integration w
 First, add the integration library as a dependency to your app:
 
 ```console
-npm install @edge-csrf/nextjs
+npm install @yocodingjosh-edge-csrf/nextjs
 # or
-pnpm add @edge-csrf/nextjs
+pnpm add @yocodingjosh-edge-csrf/nextjs
 # or
-yarn add @edge-csrf/nextjs
+yarn add @yocodingjosh-edge-csrf/nextjs
 ```
 
 Next, create a middleware file (`middleware.ts`) for your project and add the Edge-CSRF middleware:
@@ -19,7 +19,7 @@ Next, create a middleware file (`middleware.ts`) for your project and add the Ed
 ```typescript
 // middleware.ts
 
-import { createCsrfMiddleware } from '@edge-csrf/nextjs';
+import { createCsrfMiddleware } from '@yocodingjosh-edge-csrf/nextjs';
 
 // initalize csrf protection middleware
 const csrfMiddleware = createCsrfMiddleware({
@@ -103,7 +103,7 @@ type Data = {
 };
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
-  // this code won't execute unless CSRF token passes validation 
+  // this code won't execute unless CSRF token passes validation
   res.status(200).json({ status: 'success' });
 }
 ```
@@ -133,7 +133,7 @@ If you want lower-level control over the response or which routes CSRF protectio
 ```typescript
 // middleware.ts
 
-import { CsrfError, createCsrfProtect } from '@edge-csrf/nextjs';
+import { CsrfError, createCsrfProtect } from '@yocodingjosh-edge-csrf/nextjs';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
@@ -154,7 +154,7 @@ export const middleware = async (request: NextRequest) => {
     if (err instanceof CsrfError) return new NextResponse('invalid csrf token', { status: 403 });
     throw err;
   }
-    
+
   return response;
 };
 ```
@@ -187,7 +187,7 @@ export const middleware = async (request: NextRequest) => {
 
 ## API
 
-The following are named exports in the the `@edge-csrf/nextjs` module:
+The following are named exports in the the `@yocodingjosh-edge-csrf/nextjs` module:
 
 ### Types
 

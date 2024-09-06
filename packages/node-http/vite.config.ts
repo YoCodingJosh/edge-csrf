@@ -16,7 +16,7 @@ export default defineConfig({
       entry: [
         resolve(__dirname, 'src/index.ts'),
       ],
-      name: '@edge-csrf/node-http',
+      name: '@yocodingjosh-edge-csrf/node-http',
       formats: ['es', 'cjs'],
     }
   },

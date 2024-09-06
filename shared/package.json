@@ -1,5 +1,5 @@
 {
-  "name": "@edge-csrf/shared",
+  "name": "@yocodingjosh-edge-csrf/shared",
   "private": true,
   "type": "module",
   "scripts": {

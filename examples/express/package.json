@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@edge-csrf/express": "^2.2.0",
+    "@yocodingjosh-edge-csrf/express": "^2.2.0",
     "express": "^4.19.2"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@edge-csrf/sveltekit",
+  "name": "@yocodingjosh-edge-csrf/sveltekit",
   "version": "0.0.0",
   "description": "Edge-CSRF SvelteKit integration library",
   "author": "Andres Morey",

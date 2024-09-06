@@ -7,11 +7,11 @@ This is the documentation for Edge-CSRF's Node built-in http module integration.
 First, add the integration library as a dependency:
 
 ```console
-npm install @edge-csrf/node-http
+npm install @yocodingjosh-edge-csrf/node-http
 # or
-pnpm add @edge-csrf/node-http
+pnpm add @yocodingjosh-edge-csrf/node-http
 # or
-yarn add @edge-csrf/node-http
+yarn add @yocodingjosh-edge-csrf/node-http
 ```
 
 Next, add the Edge-CSRF CSRF protection function to your app:
@@ -21,7 +21,7 @@ Next, add the Edge-CSRF CSRF protection function to your app:
 
 import { createServer } from 'http';
 
-import { createCsrfProtect } from '@edge-csrf/node-http';
+import { createCsrfProtect } from '@yocodingjosh-edge-csrf/node-http';
 
 // initalize csrf protection middleware
 const csrfProtect = createCsrfProtect({
@@ -82,7 +82,7 @@ server.listen(3000, () => {
 });
 ```
 
-With the CSRF protection method, all HTTP submission requests (e.g. POST, PUT, DELETE, PATCH) will be rejected if they do not include a valid CSRF token. 
+With the CSRF protection method, all HTTP submission requests (e.g. POST, PUT, DELETE, PATCH) will be rejected if they do not include a valid CSRF token.
 
 ## Example
 
@@ -115,7 +115,7 @@ Check out the example Node-HTTP server in this repository: [Node-HTTP example](e
 
 ## API
 
-The following are named exports in the the `@edge-csrf/node-http` module:
+The following are named exports in the the `@yocodingjosh-edge-csrf/node-http` module:
 
 ### Types
 

@@ -1,6 +1,6 @@
 import { createServer } from 'http';
 
-import { CsrfError, createCsrfProtect } from '@edge-csrf/node-http';
+import { CsrfError, createCsrfProtect } from '@yocodingjosh-edge-csrf/node-http';
 
 // initalize csrf protection method
 const csrfProtect = createCsrfProtect({

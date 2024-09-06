@@ -1,5 +1,5 @@
 {
-  "name": "@edge-csrf/nextjs",
+  "name": "@yocodingjosh-edge-csrf/nextjs",
   "version": "0.0.0",
   "description": "Edge-CSRF Next.js integration library",
   "author": "Andres Morey",

@@ -1,5 +1,5 @@
 {
-  "name": "@edge-csrf/express",
+  "name": "@yocodingjosh-edge-csrf/express",
   "version": "0.0.0",
   "description": "Edge-CSRF Express integration library",
   "author": "Andres Morey",

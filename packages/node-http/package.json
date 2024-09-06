@@ -1,5 +1,5 @@
 {
-  "name": "@edge-csrf/node-http",
+  "name": "@yocodingjosh-edge-csrf/node-http",
   "version": "0.0.0",
   "description": "Edge-CSRF integration library for node's http module",
   "author": "Andres Morey",

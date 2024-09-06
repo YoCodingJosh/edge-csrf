@@ -4,6 +4,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@edge-csrf/node-http": "^2.2.0"
+    "@yocodingjosh-edge-csrf/node-http": "^2.2.0"
   }
 }

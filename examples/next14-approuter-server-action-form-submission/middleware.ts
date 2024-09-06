@@ -1,4 +1,4 @@
-import { CsrfError, createCsrfProtect } from '@edge-csrf/nextjs';
+import { CsrfError, createCsrfProtect } from '@yocodingjosh-edge-csrf/nextjs';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 

@@ -1,4 +1,4 @@
-import { createCsrfMiddleware } from '@edge-csrf/nextjs';
+import { createCsrfMiddleware } from '@yocodingjosh-edge-csrf/nextjs';
 
 // initalize csrf protection middleware
 const csrfMiddleware = createCsrfMiddleware({

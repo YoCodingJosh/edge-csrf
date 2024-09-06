@@ -29,11 +29,11 @@ We hope you enjoy using this software. Contributions and suggestions are welcome
 First, install Edge-CSRF's Next.js integration library:
 
 ```console
-npm install @edge-csrf/nextjs
+npm install @yocodingjosh-edge-csrf/nextjs
 # or
-pnpm add @edge-csrf/nextjs
+pnpm add @yocodingjosh-edge-csrf/nextjs
 # or
-yarn add @edge-csrf/nextjs
+yarn add @yocodingjosh-edge-csrf/nextjs
 ```
 
 Next, create a middleware file (`middleware.ts`) for your project and add the Edge-CSRF middleware:
@@ -41,7 +41,7 @@ Next, create a middleware file (`middleware.ts`) for your project and add the Ed
 ```typescript
 // middleware.ts
 
-import { createCsrfMiddleware } from '@edge-csrf/nextjs';
+import { createCsrfMiddleware } from '@yocodingjosh-edge-csrf/nextjs';
 
 // initalize csrf protection middleware
 const csrfMiddleware = createCsrfMiddleware({
@@ -88,11 +88,11 @@ export async function POST() {
 First, install Edge-CSRF's SvelteKit integration library:
 
 ```console
-npm install @edge-csrf/sveltekit
+npm install @yocodingjosh-edge-csrf/sveltekit
 # or
-pnpm add @edge-csrf/sveltekit
+pnpm add @yocodingjosh-edge-csrf/sveltekit
 # or
-yarn add @edge-csrf/sveltekit
+yarn add @yocodingjosh-edge-csrf/sveltekit
 ```
 
 Next, create a server-side hooks file (`hooks.server.ts`) for your project and add the Edge-CSRF handle:
@@ -100,7 +100,7 @@ Next, create a server-side hooks file (`hooks.server.ts`) for your project and a
 ```typescript
 // src/hooks.server.ts
 
-import { createCsrfHandle } from '@edge-csrf/sveltekit';
+import { createCsrfHandle } from '@yocodingjosh-edge-csrf/sveltekit';
 
 // initalize csrf protection handle
 const csrfHandle = createCsrfHandle({
@@ -155,7 +155,7 @@ Finally, to make typescript aware of the new `locals` attributes you can add Edg
 ```typescript
 // src/app.d.ts
 
-import type { CsrfLocals } from '@edge-csrf/sveltekit';
+import type { CsrfLocals } from '@yocodingjosh-edge-csrf/sveltekit';
 
 declare global {
   namespace App {
@@ -173,11 +173,11 @@ export {};
 First, install Edge-CSRF's Express integration library:
 
 ```console
-npm install @edge-csrf/express
+npm install @yocodingjosh-edge-csrf/express
 # or
-pnpm add @edge-csrf/express
+pnpm add @yocodingjosh-edge-csrf/express
 # or
-yarn add @edge-csrf/express
+yarn add @yocodingjosh-edge-csrf/express
 ```
 
 Next, add the Edge-CSRF middleware to your app:
@@ -185,7 +185,7 @@ Next, add the Edge-CSRF middleware to your app:
 ```javascript
 // app.js
 
-import { createCsrfMiddleware } from '@edge-csrf/express';
+import { createCsrfMiddleware } from '@yocodingjosh-edge-csrf/express';
 import express from 'express';
 
 // initalize csrf protection middleware
@@ -231,18 +231,18 @@ app.listen(port, () => {
 });
 ```
 
-With the middleware installed, all HTTP submission requests (e.g. POST, PUT, DELETE, PATCH) will be rejected if they do not include a valid CSRF token. 
+With the middleware installed, all HTTP submission requests (e.g. POST, PUT, DELETE, PATCH) will be rejected if they do not include a valid CSRF token.
 
 ## Quickstart (Node-HTTP)
 
 First, install Edge-CSRF's Node-HTTP integration library:
 
 ```console
-npm install @edge-csrf/node-http
+npm install @yocodingjosh-edge-csrf/node-http
 # or
-pnpm add @edge-csrf/node-http
+pnpm add @yocodingjosh-edge-csrf/node-http
 # or
-yarn add @edge-csrf/node-http
+yarn add @yocodingjosh-edge-csrf/node-http
 ```
 
 Next, add the Edge-CSRF CSRF protection function to your request handlers:
@@ -252,7 +252,7 @@ Next, add the Edge-CSRF CSRF protection function to your request handlers:
 
 import { createServer } from 'http';
 
-import { createCsrfProtect } from '@edge-csrf/node-http';
+import { createCsrfProtect } from '@yocodingjosh-edge-csrf/node-http';
 
 // initalize csrf protection middleware
 const csrfProtect = createCsrfProtect({
@@ -313,7 +313,7 @@ server.listen(3000, () => {
 });
 ```
 
-With the CSRF protection method, all HTTP submission requests (e.g. POST, PUT, DELETE, PATCH) will be rejected if they do not include a valid CSRF token. 
+With the CSRF protection method, all HTTP submission requests (e.g. POST, PUT, DELETE, PATCH) will be rejected if they do not include a valid CSRF token.
 
 ## Development
 

@@ -16,7 +16,7 @@ export default defineConfig({
       entry: [
         resolve(__dirname, 'src/index.ts'),
       ],
-      name: '@edge-csrf/core',
+      name: '@yocodingjosh-edge-csrf/core',
       formats: ['es', 'cjs'],
     },
     rollupOptions: {

@@ -7,11 +7,11 @@ This is the documentation for Edge-CSRF's Express integration.
 First, add the integration library as a dependency:
 
 ```console
-npm install @edge-csrf/express
+npm install @yocodingjosh-edge-csrf/express
 # or
-pnpm add @edge-csrf/express
+pnpm add @yocodingjosh-edge-csrf/express
 # or
-yarn add @edge-csrf/express
+yarn add @yocodingjosh-edge-csrf/express
 ```
 
 Next, add the Edge-CSRF middleware to your app:
@@ -19,7 +19,7 @@ Next, add the Edge-CSRF middleware to your app:
 ```javascript
 // app.js
 
-import { createCsrfMiddleware } from '@edge-csrf/express';
+import { createCsrfMiddleware } from '@yocodingjosh-edge-csrf/express';
 import express from 'express';
 
 // initalize csrf protection middleware
@@ -90,7 +90,7 @@ If you want lower-level control over the response or which routes CSRF protectio
 ```typescript
 // app.js
 
-import { CsrfError, createCsrfProtect } from '@edge-csrf/express';
+import { CsrfError, createCsrfProtect } from '@yocodingjosh-edge-csrf/express';
 import express from 'express';
 
 // initalize csrf protection method
@@ -157,7 +157,7 @@ app.listen(port, () => {
 
 ## API
 
-The following are named exports in the the `@edge-csrf/express` module:
+The following are named exports in the the `@yocodingjosh-edge-csrf/express` module:
 
 ### Types
 

@@ -5,16 +5,16 @@ This is the documentation for Edge-CSRF's low-level API.
 ## Install
 
 ```console
-npm install @edge-csrf/core
+npm install @yocodingjosh-edge-csrf/core
 # or
-pnpm add @edge-csrf/core
+pnpm add @yocodingjosh-edge-csrf/core
 # or
-yarn add @edge-csrf/core
+yarn add @yocodingjosh-edge-csrf/core
 ```
 
 ## Documentation
 
-The following methods are named exports in the the `@edge-csrf/core` module:
+The following methods are named exports in the the `@yocodingjosh-edge-csrf/core` module:
 
 ```
 createSecret(length) - Create new secret (cryptographically secure)
